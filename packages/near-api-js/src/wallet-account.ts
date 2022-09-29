@@ -213,7 +213,7 @@ export class WalletConnection {
         newUrl.searchParams.set('callbackUrl', callbackUrl || currentUrl.href);
         if (meta) newUrl.searchParams.set('meta', meta);
 
-        window.location.assign(newUrl.toString());
+        window.open(newUrl.toString(), '_blank');
     }
 
     /**
