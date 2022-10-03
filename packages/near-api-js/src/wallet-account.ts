@@ -328,9 +328,7 @@ export class ConnectedWalletAccount extends Account {
         });
 
         return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                reject(new Error('Failed to redirect to sign transaction'));
-            }, 1000);
+
         });
 
         // TODO: Aggregate multiple transaction request with "debounce".
