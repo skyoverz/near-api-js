@@ -195,8 +195,7 @@ export class WalletConnection {
                 newUrl.searchParams.append('methodNames', methodName);
             });
         }
-
-        window.location.assign(newUrl.toString());
+        window.open(newUrl.toString(), '_blank');
     }
 
     /**
